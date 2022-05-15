@@ -21,7 +21,7 @@ export default Home;
 const HomeBackground = styled.div`
   width: 100%;
   height: 100vh;
-  background-image: url(/assets/main_furnitures.jpg);
+  background-image: url(./assets/main_furnitures.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -44,7 +44,7 @@ const DisplayTitle = keyframes`
 const HomeTitleDiv = styled.div`
   display: block;
   box-sizing: border-box;
-  width: 500px;
+  width: 450px;
   height: 280px;
   padding: 0 40px;
   background-color: white;

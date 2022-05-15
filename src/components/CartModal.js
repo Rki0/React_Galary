@@ -133,7 +133,7 @@ const CartBg = styled.div`
   &.show {
     display: block;
     position: relative;
-    top: -55px;
+    top: -40px;
     left: 0;
     width: 100vw;
     height: 100vh;
@@ -157,11 +157,11 @@ const CartModalHeader = styled.header`
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  height: 100px;
+  height: 70px;
   background-color: #a98274;
   color: white;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 25px;
 `;
 
 const CartToggleBtn = styled.button`
@@ -173,9 +173,9 @@ const CartToggleBtn = styled.button`
 // 따라서 보여줄 수 있는 범위가 넘어가면 스크롤이 작동하도록 만들어야함.
 // height로 최대 표시 영역을 만들어주고 넘어가면 자동으로 스크롤이 생성 되게 만듦.
 const CartModalMain = styled.main`
-  margin: 5px 0 0 10px;
+  margin: 5px 0 0 5px;
   padding: 0;
-  height: 520px;
+  height: 500px;
   overflow: auto;
 `;
 
@@ -195,7 +195,6 @@ const CartElement = styled.li`
 const CartImgDiv = styled.div`
   width: 125px;
   height: 125px;
-  margin-right: 10px;
 
   img {
     width: 100%;
@@ -219,6 +218,7 @@ const CartNumberDiv = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 `;
 
 const CartDeleteBtn = styled.button`
@@ -232,14 +232,14 @@ const CartDeleteBtn = styled.button`
 
 const CartModalFooter = styled.footer`
   display: flex;
-  padding: 10px 0 30px;
+  padding: 0px 0 30px;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 200px;
+  height: auto;
   background-color: white;
   color: black;
 `;
@@ -248,9 +248,10 @@ const FooterBtn = styled.button`
   all: unset;
   cursor: pointer;
   display: block;
-  width: 400px;
+  width: 300px;
   height: 50px;
   color: white;
   font-weight: bold;
   background-color: #a98274;
+  border-radius: 5px;
 `;

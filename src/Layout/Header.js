@@ -58,15 +58,16 @@ const MenuBar = styled.header`
   width: 100%;
   text-align: center;
   align-items: center;
-  padding: 30px 0px 30px;
+  padding: 20px 0px 20px;
   background-color: #ffffff;
   color: #7f703d;
-  font-size: 20px;
+  font-size: 15px;
+  z-index: 5000;
 `;
 
 const MenuDiv = styled.div`
   width: 100%;
-  height: 25px;
+  height: 20px;
   position: relative;
 `;
 
@@ -93,7 +94,7 @@ const CartBtn = styled.button`
   color: inherit;
   position: absolute;
   top: 0;
-  right: 300px;
+  right: 150px;
   cursor: pointer;
 
   &:hover {
@@ -119,7 +120,7 @@ const LoginBtn = styled.button`
   background-color: transparent;
   color: inherit;
   position: absolute;
-  right: 200px;
+  right: 100px;
   cursor: pointer;
 
   &:hover {

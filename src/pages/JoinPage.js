@@ -63,7 +63,7 @@ export default JoinPage;
 
 const LoginPageBg = styled.div`
   background-color: #d7ccc8;
-  height: 100vh;
+  height: 100%;
 `;
 
 const LoginPageDiv = styled.div`
@@ -79,7 +79,7 @@ const LoginTitle = styled.h1`
   font-weight: bold;
   font-size: 45px;
   font-family: "DM Serif Text", serif;
-  margin-top: 0;
+  margin-top: 20px;
 `;
 
 const FormDiv = styled.div`
@@ -212,4 +212,5 @@ const GithubLink = styled.a`
   background-color: #374151;
   border-radius: 10px;
   cursor: pointer;
+  margin-bottom: 20px;
 `;

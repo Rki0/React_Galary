@@ -41,6 +41,7 @@ const Products = ({ img }) => {
 // 얘가 이미지 한가운데로 관통하는 보이지 않는 width를 가지고 있어서
 // 중간 부분에 마우스 가져갈 시 버튼이 다시 감춰짐!!!
 // 저 파일에서 css를 수정해야할듯..!
+// 수정 완료! 두 개의 버튼을 묶어서 만들지 않고, 별개의 컴포넌트로 만들어서 사용함.
 
 export default Products;
 
@@ -55,7 +56,7 @@ const ProductDiv = styled.div`
 `;
 
 const FurnitureImg = styled.img`
-  width: 300px;
+  width: 250px;
   height: auto;
   margin: 0 30px;
 `;
@@ -87,7 +88,7 @@ const StyledLink = styled(Link)`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 300px;
+  width: 250px;
   height: 50px;
   text-align: center;
   margin: auto 0;

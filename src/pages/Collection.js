@@ -34,4 +34,5 @@ const CollectionDiv = styled.div`
 
 const MainTitle = styled.h1`
   font-family: "DM Serif Text", serif;
+  font-size: 26px;
 `;

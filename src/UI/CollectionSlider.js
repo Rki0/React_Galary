@@ -99,7 +99,7 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 1440px;
+  width: 1240px;
   padding: 0 30px;
   position: relative;
   overflow: hidden;

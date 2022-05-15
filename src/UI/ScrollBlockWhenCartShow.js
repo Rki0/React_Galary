@@ -16,7 +16,6 @@ const ScrollBlockWhenCartShow = (isCartHide) => {
     // 따라서 화면이 안 움직이게 됨.
     // cssText는 인라인 함수로 style을 여러개 지정할 때 사용
     if (scrollBlock) {
-      console.log(window.scrollY);
       document.body.style.cssText = `
       position: fixed; 
       // window.scrollY는 스크롤의 현 위치를 표시함.

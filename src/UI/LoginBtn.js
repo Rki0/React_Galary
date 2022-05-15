@@ -31,7 +31,7 @@ const LoginMenu = styled.div`
     display: block;
     width: 100px;
     position: absolute;
-    right: 167.5px;
+    right: 67.5px;
     z-index: 3000;
   }
 `;
@@ -64,7 +64,7 @@ const LoginLi = styled.li`
   width: 100%;
   padding: 5px;
   background-color: #a98274;
-  border-bottom: 1px solid #4b2c20;
+  border-bottom: 1px solid white;
 
   &:first-child {
     border-top-left-radius: 10px;

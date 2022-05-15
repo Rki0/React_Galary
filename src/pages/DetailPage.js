@@ -70,7 +70,7 @@ function DetailPage() {
         </ImgAndDesc>
 
         <div>
-          <h1>제품명</h1>
+          <ItemName>제품명</ItemName>
           {/* charge를 리덕스 스토어에 저장했으므로 꺼내쓰는게 맞다고 생각되지만, ,기호를 중간에 넣어야하므로 그냥 문자로 기입함. */}
           {/* chairImg[] 만들 때 같이 charge 항목을 string 형태로 추가해서 이 자리에 사용하고, number 타입으로 사용하려면 ,기호를 파싱해서 변수로 삽입하는게 이상적이라고 생각됨. */}
           <Price>₩ 300,000</Price>
@@ -157,7 +157,7 @@ export default DetailPage;
 const ParentDiv = styled.div`
   display: block;
   width: 90%;
-  height: 750px;
+  height: 600px;
   margin: 0 auto;
   padding: 20px 50px;
   background-color: beige;
@@ -167,7 +167,7 @@ const ParentDiv = styled.div`
 const Header = styled.header`
   display: flex;
   font-weight: bold;
-  margin: 10px 0 15px 200px;
+  margin: 10px 0 10px 200px;
 `;
 
 const StyledLink = styled(Link)`
@@ -183,20 +183,26 @@ const MainDiv = styled.div`
 const ImgAndDesc = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
+  align-items: center;
   width: 45%;
-  height: 700px;
+  height: 550px;
 `;
 
 const FurnitureImg = styled.img`
   display: block;
-  width: 400px;
-  height: auto;
+  max-width: 550px;
+  height: 450px;
+`;
+
+const ItemName = styled.h1`
+  font-size: 26px;
+  margin: 0;
 `;
 
 const Price = styled.strong`
-  font-size: 35px;
-  margin-bottom: 15px;
+  font-size: 30px;
+  margin-bottom: 10px;
 `;
 
 const ColorTitle = styled.h2`
@@ -207,7 +213,7 @@ const ColorDiv = styled.div`
   display: flex;
   width: 150px;
   justify-content: space-between;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 `;
 
 const NumberTitle = styled.h2`
@@ -218,7 +224,7 @@ const NumberInput = styled.input`
   width: 60px;
   height: 30px;
   font-size: 20px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 `;
 
 const AddBtn = styled.button`

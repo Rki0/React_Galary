@@ -7,10 +7,14 @@ import { BrowserRouter } from "react-router-dom";
 import store from "./Redux/index";
 import { Provider } from "react-redux";
 
+// 큰 실수 발견...브라우저 확대율이 80%인 채로 계속 작업했는데, 그걸 깃헙에 커밋하고나서 알았음..
+// css 전면 수정 필요함 ㅠㅠ
+// 수정된 컴포넌트들은 파일 상단에 표기할 것!
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <BrowserRouter>
       <Provider store={store}>
         <App />
       </Provider>
