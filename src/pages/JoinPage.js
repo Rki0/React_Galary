@@ -11,19 +11,19 @@ function JoinPage() {
         <FormDiv>
           <Form>
             <div>
-              <StyledLabel for="name">Name</StyledLabel>
-              <StyledInput
-                type="text"
-                placeholder="Write Your Name"
-                id="name"
-              />
-            </div>
-            <div>
               <StyledLabel for="email">Email address</StyledLabel>
               <StyledInput
                 type="email"
                 placeholder="Write Your Id in Email Form"
                 id="email"
+              />
+            </div>
+            <div>
+              <StyledLabel for="password">Password</StyledLabel>
+              <StyledInput
+                type="password"
+                placeholder="Write Your Password"
+                id="password"
               />
             </div>
             <div>
